@@ -10,6 +10,9 @@ module.exports = {
   mode: 'development',
   resolve: {
     extensions: ['.ts', '.tsx', '.js'],
+    alias: {
+      '@prisma/client$': require.resolve('@prisma/client'),
+    },
   },
   module: {
     rules: [

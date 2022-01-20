@@ -5,6 +5,7 @@ account_id = ""
 route = ""
 workers_dev = true
 compatibility_date = "2022-01-20"
+webpack_config = "webpack.config.js"
 
 [build]
 command = "npm install && npm run build"
