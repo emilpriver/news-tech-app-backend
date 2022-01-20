@@ -20,3 +20,19 @@ enum Level {
   Warn
   Error
 }
+
+model Author {
+  id      String    @id
+  name    String
+  website String
+  novelty Novelty[]
+}
+
+model Novelty {
+  id           String   @id
+  title        String
+  link         String
+  published_at DateTime
+  author       Author   @relation(fields: [authorId], references: [id])
+  authorId     String
+}
